@@ -1,6 +1,6 @@
 # Webpack Starter
 
-Fork this repository to start a new project with Webpack.
+Fork this repository to start a new project with Webpack and Babel, with ES2015+ compiling, and JS file watching.
 
 This is an open source project which uses the [The Hippocratic License][license].
 
