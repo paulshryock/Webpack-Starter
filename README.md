@@ -8,10 +8,7 @@ This is an open source project which uses the [The Hippocratic License][license]
 
 ### Requirements
 
-1. Node
-  - Check if Node is installed: `node --version`
-  - If you see a version number, such as `v11.6.0`, proceed to [Get Started](#get-started)
-  - If Node isn't installed, [download][node-download] and install it, then proceed to [Get Started](#get-started)
+Before you begin, you'll need to have [Node.js][node] installed so that you can use [npm][npm]. You'll also need to know how to access the command line on your machine.
 
 ### Get Started
 
@@ -24,7 +21,7 @@ npm i
 npm start
 ```
 
-Then find and replace the package name (`Webpack-Starter`) and author name (`Paul Shryock`) in [`LICENSE`][license], [`package.json`][pkg], and `README.md`.
+Then find and replace the author and package names in [`LICENSE`][license] and [`package.json`][pkg]. Rewrite this `README.md` before publishing.
 
 ## Documentation
 
@@ -35,7 +32,8 @@ Then find and replace the package name (`Webpack-Starter`) and author name (`Pau
 If you'd like to contribute, please read the [Code of Conduct][code-of-conduct] and [Contributing instructions][contributing], then fork the repository and use a feature branch. Pull requests are welcome.
 
 [license]: https://firstdonoharm.dev/
-[node-download]: https://nodejs.org/en/download/
+[node]: https://nodejs.org/
+[npm]: https://npmjs.com/
 [pkg]: package.json
 [docs]: _docs/
 [code-of-conduct]: CODE_OF_CONDUCT.md

@@ -2,8 +2,7 @@
   "name": "Webpack-Starter",
   "version": "1.0.0",
   "description": "Fork this repository to start a new project with Webpack.",
-  "keywords": [
-  ],
+  "keywords": [],
   "license": "Hippocratic License v1.0",
   "author": {
     "name": "Paul Shryock",
@@ -12,10 +11,18 @@
   },
   "scripts": {
     "start": "npm run build",
-    "build": "NODE_ENV='production'",
-    "develop": "NODE_ENV='development'",
-    "serve": "NODE_ENV='development'"
+    "build": "NODE_ENV='production' node taskrunner.js",
+    "develop": "NODE_ENV='development' node taskrunner.js",
+    "serve": "NODE_ENV='development' node taskrunner.js"
   },
   "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "babel-loader": "^8.0.6",
+    "webpack": "^4.41.0",
+    "webpack-cli": "^3.3.9"
+  },
+  "dependencies": {
+    "lodash": "^4.17.15"
   }
 }
