@@ -1,13 +1,12 @@
-import _ from 'lodash';
+import more from './more';
+import global1 from './globals/global-1';
+import global2 from './globals/global-2';
+import component1 from './components/component-1';
+import component2 from './components/component-2';
 
-function component() {
-  const element = document.createElement('div');
-
-  // Lodash, currently included via a script, is required for this line to work
-  element.innerHTML = _.join(['Hello', 'webpack'], ' ');
-
-  return element;
-}
-
-document.body.appendChild(component());
-console.log(component());
+console.log('index.js');
+console.log(more);
+console.log(global1);
+console.log(global2);
+console.log(component1);
+console.log(component2);

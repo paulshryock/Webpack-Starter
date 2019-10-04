@@ -5,4 +5,4 @@ const component1 = () => {
   console.log('component-1.js')
 }
 
-component1()
+export default component1

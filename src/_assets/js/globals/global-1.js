@@ -5,4 +5,4 @@ const global1 = () => {
   console.log('global-1.js')
 }
 
-global1()
+export default global1

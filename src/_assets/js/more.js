@@ -5,4 +5,4 @@ const more = () => {
   console.log('more.js')
 }
 
-more()
+export default more
