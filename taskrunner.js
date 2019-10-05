@@ -4,17 +4,20 @@ const path = require('path');
 const isProduction = process.env.NODE_ENV === 'production'
 
 const compiler = webpack({
+  // Webpack configuration
   mode: isProduction ? "production" : "development",
-  entry: "./src/_assets/js/index.js",
+  entry: {
+    bundle: "./src/_assets/js/index.js"
+  },
   output: {
     path: path.resolve(__dirname, "build/js"),
-    filename: "bundle.js",
+    filename: "[name].js",
     publicPath: "/js/",
   },
   module: {
     rules: [
       {
-        test: /\.m?js$/,
+        test: /\.js$/,
         exclude: /(node_modules)/,
         use: {
           loader: 'babel-loader',
@@ -28,17 +31,15 @@ const compiler = webpack({
 });
 
 const build = () => {
-  compiler.run((err, stats) => { // Stats Object
+  compiler.run((err, stats) => {
     // ...
   });
 };
 
 const watch = () => {
   compiler.watch({
-    // Example watchOptions
-    aggregateTimeout: 300,
-    poll: undefined
-  }, (err, stats) => { // Stats Object
+    // watchOptions
+  }, (err, stats) => {
     // Print watch/build result here...
     console.log(stats);
   });
