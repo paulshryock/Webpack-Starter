@@ -13,7 +13,7 @@
     "start": "npm run build",
     "build": "NODE_ENV='production' node taskrunner.js",
     "develop": "NODE_ENV='development' node taskrunner.js",
-    "serve": "NODE_ENV='development' node taskrunner.js"
+    "watch": "NODE_ENV='development' node taskrunner.js"
   },
   "devDependencies": {
     "@babel/core": "^7.6.2",

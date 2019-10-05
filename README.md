@@ -23,9 +23,15 @@ npm start
 
 Then find and replace the author and package names in [`LICENSE`][license] and [`package.json`][pkg]. Rewrite this `README.md` before publishing.
 
-## Documentation
+## Development
 
-[Project documentation][docs] files are in the `_docs` directory.
+- `npm run develop`: Builds JavaScript bundle for development
+- `npm run watch`: Builds JavaScript bundle for development and watches for changes
+
+## Production
+
+- `npm start`: Runs `build`
+- `npm run build`: Builds JavaScript bundle for production
 
 ## Contributing
 
