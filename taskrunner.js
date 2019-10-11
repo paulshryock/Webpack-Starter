@@ -11,8 +11,8 @@ const compiler = webpack({
   },
   output: {
     path: path.resolve(__dirname, "build/js"),
-    filename: "[name].js",
     publicPath: "/js/",
+    filename: "[name].js"
   },
   module: {
     rules: [
@@ -20,7 +20,7 @@ const compiler = webpack({
         test: /\.js$/,
         exclude: /(node_modules)/,
         use: {
-          loader: 'babel-loader',
+          loader: 'babel-loader', // Babel
           options: {
             presets: ['@babel/preset-env']
           }
